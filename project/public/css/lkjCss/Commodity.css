@@ -31,6 +31,7 @@ body {
 .product-img {
   width: 80%;
   margin: 10% auto;
+  cursor: pointer;
 }
 .multiview {
   width: 100%;
@@ -53,6 +54,7 @@ body {
 }
 .product-multiview li img:hover {
   background: white;
+  cursor: pointer;
 }
 .product-information {
   padding-top: 18%;
@@ -145,10 +147,14 @@ body {
   color: black;
 }
 .parameter,
+.evaluate-part {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .summary,
 .evaluate {
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .parameter-title,
@@ -170,7 +176,6 @@ body {
   color: #999999;
 }
 .main-r {
-  padding-top: 3px;
   width: 1000px;
   float: right;
 }
@@ -188,5 +193,91 @@ body {
   font-size: 14px;
   color: #999999;
   padding: 0;
+}
+label.bui-radios-label input {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+label.bui-radios-label .bui-radios {
+  display: inline-block;
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 10%;
+  vertical-align: -2px;
+}
+label.bui-radios-label input:checked + .bui-radios:after {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  border-radius: 10%;
+  top: 3px;
+  left: 3px;
+}
+label.bui-radios-label input:checked + .bui-radios {
+  background: #eb0028;
+  border: 1px solid #eb0028;
+}
+label.bui-radios-label input:disabled + .bui-radios {
+  background-color: #e8e8e8;
+  border: solid 1px #979797;
+}
+label.bui-radios-label input:disabled:checked + .bui-radios:after {
+  background-color: #c1c1c1;
+}
+label.bui-radios-label.bui-radios-anim .bui-radios {
+  -webkit-transition: background-color ease-out 0.3s;
+  transition: background-color ease-out 0.3s;
+}
+.evaluate {
+  background: white;
+}
+.evaluate-head {
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.evaluate-name,
+.evaluate-time {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+.evaluate-name {
+  font-size: 20px;
+  color: #101920;
+  font-weight: bold;
+}
+.evaluate-time {
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.6);
+}
+.evaluate-grade i {
+  color: red;
+}
+.evaluate-grade {
+  float: right;
+  margin-right: 5%;
+  font-size: 25px;
+}
+.evaluate-text {
+  word-wrap: break-word;
+  margin-top: 4%;
+  font-weight: bold;
+}
+.evaluate-img {
+  margin-top: 3%;
+}
+.evaluate-img img {
+  cursor: pointer;
+  width: 80px;
+  margin-right: 10px;
+  border: 1px solid #E8E8E8;
 }
 /*# sourceMappingURL=Commodity.css.map */
