@@ -1,0 +1,229 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    color: #333333;
+}
+#lightPhoto_body{
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+}
+#forum-banner{
+    padding: 10px;
+    width: 880px;
+    height: 450px;
+    background-color: white;
+    position: relative;
+
+}
+.swiper-container {
+    width: 100%;
+    height: 450px;
+
+}
+.banner{
+    width: 100%;
+    height: 450px;
+}
+#banner_detail{
+    width: 880px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,.4);
+    z-index: 888;
+}
+#banner_detail_headline{
+    color: white;
+}
+#banner_detail_other{
+    font-size: 14px;
+    color: #b2b2b2;
+}
+#lightPhoto_type{
+    margin-top: 10px;
+    padding: 10px;
+    width: 880px;
+    height: 70px;
+    background-color: white;
+}
+#lightPhoto_type a{
+    float: left;
+    display: block;
+    width: 280px;
+    height: 70px;
+}
+#type_famous{
+
+    background-color: #0066ff;
+    margin-right: 18px;
+}
+#type_famous img{
+    float: left;
+    margin-top: 15px;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+}
+#type_famous div{
+    padding-left: 20px;
+    float: left;
+    width: 150px;
+    height: 60px;
+    margin-top: 1px;
+
+}
+#type_famous p,#type_simple p,#type_publish p{
+    margin:5px 0 0 0;
+    color: white;
+    font-size: 20px;
+
+}
+#type_simple{
+    background-color: #d49665;
+    margin-right: 18px;
+}
+#type_publish{
+    background-color: #ed1c24;
+}
+#simple_icon,#publish_icon{
+    float: left;
+    margin-top: 5px;
+    margin-left: 50px;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+
+}
+#simple_headline,#publish_headline{
+    padding-left: 20px;
+    float: left;
+    width: 150px;
+    height: 60px;
+    margin-top: 1px;
+
+}
+#choose{
+    width: 900px;
+    height: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+#choose div{
+    width: 200px;
+    margin: 0 auto;
+}
+.chooseBtn {
+    display: block;
+    float: left;
+    width: 100px;
+    height:30px;
+    background-color: #dddddd;
+    line-height: 30px;
+}
+.chooseBtn:hover{
+    background-color: #ed1c24;
+}
+.active{
+    background-color:#ed1c24;
+}
+#imageWaterfall{
+    width: 900px;
+    margin-top: 10px;
+
+}
+#imageWaterfall:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+#imageWaterfall ul{
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+
+}
+#imageWaterfall li{
+    padding: 10px;
+    width:270px ;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.imgList{
+    width: 270px;
+}
+.userImg{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+#image_list1{
+    width: 290px;
+    margin-right: 15px;
+}
+#image_list2{
+    width: 290px;
+    margin-right: 15px;
+}
+#image_list1{
+    width: 290px;
+}
+.userInfo{
+    padding-top: 10px;
+    width: 270px;
+    height: 50px;
+}
+.userBox{
+    float: left;
+    width: 200px;
+    height:50px ;
+    padding-left: 10px;
+}
+.userBox h5{
+    margin: 0 0 10px 0;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333333;
+
+}
+.userBox span{
+    font-size: 14px;
+    color: #999999;
+}
+.imgBottom span{
+    color: #999999;
+}
+.imgBottomDiv1{
+    float: left;
+}
+.imgBottomDiv2{
+    float: right;
+}
+.imgChoose,.imgChoose2{
+    height:44px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+.imgChoose i,.imgChoose span{
+    color: #999999;
+}
+.imgChoose2 i,.imgChoose2 span{
+    color: #999999;
+}
+.imgChoose2{
+    text-align: right;
+}
+.imgChoose i:hover,.imgChoose2 i:hover{
+    color: #ed1c24;
+}
+.imgBottomDiv2 a{
+    margin-right: 10px;
+}
+.imgBottom:after{
+    clear: both;
+    content: '';
+    display: block;
+}
