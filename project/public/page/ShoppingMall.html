@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Mall</title>
+    <script src="../util/jquery.min.js"></script>
+    <link rel="stylesheet" href=".././font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/lkjCss/ShoppingMall.css">
+    <link rel="stylesheet" href="../util/swiper-5.2.0/package/css/swiper.min.css">
+
+</head>
+<body>
+<div id="content">
+
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img width="100%"
+                                                src="../image/1.jpg"
+                                                alt=""></div>
+                <div class="swiper-slide"> <img width="100%"
+                                                src="../image/1.jpg"
+                                                alt=""></div>
+                <div class="swiper-slide"> <img width="100%"
+                                                src="../image/1.jpg"
+                                                alt=""></div>
+                <div class="swiper-slide"> <img width="100%"
+                                                src="../image/1.jpg"
+                                                alt=""></div>
+                <div class="swiper-slide"> <img width="100%"
+                                                src="../image/1.jpg"
+                                                alt=""></div>
+            </div>
+        </div>
+
+    <div class="nav-title">
+        <div class="nav-container clearfix">
+            <div class="container-title">全部品牌 <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul class="container-nav-list">
+                    <li>全部品牌</li>
+                    <li>佳能</li>
+                    <li>佳能</li>
+                    <li>佳能</li>
+                </ul>
+            </div>
+            <div class="container-title">全部类别 <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul style="display: none" class="container-nav-list">
+                    <li>全部类别</li>
+                    <li>相机</li>
+                    <li>脚手架</li>
+                    <li>镜头</li>
+                </ul>
+            </div>
+            <div class="container-title">默认排序 <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                <ul style="display: none" class="container-nav-list">
+                    <li>默认排序</li>
+                    <li>价格从低到高</li>
+                    <li>价格从高到低</li>
+                    <li>最新上架</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="shop-list">
+        <div class="shop-list-card">
+            <a class="accessory-card" href="Commodity.html">
+                <div class="card-img">
+                    <img width="100%"
+                                           src="../image/1.jpg"
+                                           alt="">
+                </div>
+                <span class="card-name">佳能 EOS 200D</span>
+                <span class="card-price">￥12990</span>
+            </a>
+        </div>
+        <div class="shop-list-card">
+            <a class="accessory-card" href="Commodity.html">
+                <div class="card-img">
+                    <img width="100%"
+                         src="../image/1.jpg"
+                         alt="">
+                </div>
+                <span class="card-name">佳能 EOS 200D</span>
+                <span class="card-price">￥12990</span>
+            </a>
+        </div>
+        <div class="shop-list-card">
+            <a class="accessory-card" href="Commodity.html">
+                <div class="card-img">
+                    <img width="100%"
+                         src="../image/1.jpg"
+                         alt="">
+                </div>
+                <span class="card-name">佳能 EOS 200D</span>
+                <span class="card-price">￥12990</span>
+            </a>
+        </div>
+        <div class="shop-list-card">
+            <a class="accessory-card" href="Commodity.html">
+                <div class="card-img">
+                    <img width="100%"
+                         src="../image/1.jpg"
+                         alt="">
+                </div>
+                <span class="card-name">佳能 EOS 200D</span>
+                <span class="card-price">￥12990</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script src="../util/swiper-5.2.0/package/js/swiper.min.js"></script>
+<script src="../util/jquery.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        effect : 'fade',
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+
+
+    });
+
+</script>
+</html>
