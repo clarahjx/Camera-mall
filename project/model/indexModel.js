@@ -1,1 +1,4 @@
-水水水水
+var db=require('./config');
+// var indexModel={
+
+// }
