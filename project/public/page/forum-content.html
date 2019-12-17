@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帖子正文</title>
+    <link rel="stylesheet" href="../css/forum/header.css">
+    <link rel="stylesheet" href="../css/forum/footer.css">
+    <link rel="stylesheet" href="../css/forum/forum-content.css">
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <a href="javascript:" id="logo">logo</a>
+    <ul id="nav-bar">
+        <li><a href="./forum-index.html">首页</a></li>
+        <li><a href="./forum-partition.html">Sony</a></li>
+        <li><a href="./forum-partition.html">佳能</a></li>
+        <li><a href="./forum-partition.html">尼康</a></li>
+        <li><a href="./forum-partition.html">资源共享</a></li>
+        <li><a href="./forum-lightPhoto.html">轻摄影</a></li>
+        <li><a href="javascript:">商城</a></li>
+    </ul>
+    <div id="search">
+        <div id="search-lf"></div>
+        <div id="search-body">
+            <label>
+                <input type="text" placeholder="请输入搜索内容">
+            </label>
+        </div>
+        <div id="search-rg">
+            <a href="javascript:"><i class="fa fa-search" id="search-icon" ></i></a>
+        </div>
+    </div>
+</header>
+<div id="content_body">
+     <!--    帖子内容-->
+    <div id="content">
+        <div id="content_head">
+            <img src="../image/forum/userimage6.jpg" alt="">
+            <div class="userInfo">
+             <h4>
+                 <span class="headline">【随心拍】随拍</span>
+                 <div id="review">
+                     <span><i class="fa fa-eye"></i></span>
+                     <span class="lookNum">111</span>
+                     <span><i class="fa fa-commenting"></i></span>
+                     <span class="lookNum">111</span>
+                 </div>
+            </h4>
+             <div class="user">
+                 <span class="username">username</span>
+                  <span>|</span>
+                  <span>发表时间:</span>
+                  <span class="date">2019-12-15</span>
+             </div>
+            </div>
+        </div>
+        <div id="content_text">
+            内容
+        </div>
+</div>
+    <!--    帖子内容-->
+    <!--    回复内容-->
+    <div id="review_body">
+        <ul id="review_list">
+            <li>
+                 <div class="list_head">
+                 <img src="../image/forum/userimage6.jpg" alt="">
+                 <div class="userInfo">
+                     <h4>
+                         <span class="headline">username</span>
+                     </h4>
+                     <div class="user">
+                         <span>发表时间:</span>
+                         <span class="date">2019-12-15</span>
+                     </div>
+                 </div>
+                 </div>
+                 <div class="replyBox">
+                     回复
+                 </div>
+             </li>
+            <li>
+                <div class="list_head">
+                    <img src="../image/forum/userimage1.jpg" alt="">
+                    <div class="userInfo">
+                        <h4>
+                            <span class="headline">username</span>
+                        </h4>
+                        <div class="user">
+                            <span>发表时间:</span>
+                            <span class="date">2019-12-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="replyBox">
+                    回复
+                </div>
+            </li>
+            <li>
+                <div class="list_head">
+                    <img src="../image/forum/userimage2.jpg" alt="">
+                    <div class="userInfo">
+                        <h4>
+                            <span class="headline">username</span>
+                        </h4>
+                        <div class="user">
+                            <span>发表时间:</span>
+                            <span class="date">2019-12-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="replyBox">
+                    回复
+                </div>
+            </li>
+            <li>
+                <div class="list_head">
+                    <img src="../image/forum/userimage3.jpg" alt="">
+                    <div class="userInfo">
+                        <h4>
+                            <span class="headline">username</span>
+                        </h4>
+                        <div class="user">
+                            <span>发表时间:</span>
+                            <span class="date">2019-12-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="replyBox">
+                    回复
+                </div>
+            </li>
+            <li>
+                <div class="list_head">
+                    <img src="../image/forum/userimage4.jpg" alt="">
+                    <div class="userInfo">
+                        <h4>
+                            <span class="headline">username</span>
+                        </h4>
+                        <div class="user">
+                            <span>发表时间:</span>
+                            <span class="date">2019-12-15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="replyBox">
+                    回复
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <!--    回复内容-->
+    <!--    下一页 -->
+    <a id="nextPage">下一页</a>
+    <!--    下一页 -->
+    <!--     发表帖子+选择页数 -->
+    <div id="public_page">
+        <a href="javascript:" id="public">
+            <i class="fa fa-share-square-o"></i>
+            <span>发表主题</span>
+        </a>
+        <div id="page">
+            <a href="javascript:">返回</a>
+            <a href="javascript:">1</a>
+            <a href="javascript:">2</a>
+            <a href="javascript:">3</a>
+            <a href="javascript:">...8</a>
+            <a href="javascript:"> > </a>
+        </div>
+    </div>
+    <!--     发表帖子+选择页数 -->
+    <!--    回复-->
+    <div id="replyBox">
+       <div id="editor">
+           <div id="div1" class="toolbar">
+
+           </div>
+           <div id="div2"  class="editorBox text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+               <p>请输入内容</p>
+           </div>
+       </div>
+    </div>
+    <!--    回复-->
+</div>
+<footer>
+    <div id="footer_info">
+        <p>
+            <a href="javascript:">小黑屋</a>
+            <span>|</span>
+            <a href="javascript:">用户协议</a>
+            <span>|</span>
+            <a href="javascript:">隐私政策</a>
+            <span>|</span>
+            <a href="javascript:">社区总规则</a>
+            <span>|</span>
+        </p>
+        <p id="company">&copy;国信安W207部1小组</p>
+    </div>
+</footer>
+</body>
+<script type="text/javascript" src="../util/wangEditor-3.1.1/release/wangEditor.js"></script>
+<script type="text/javascript">
+    let E = window.wangEditor;
+    let editor = new E('#div1','#div2');
+    editor.customConfig.menus = [
+        'head',  // 标题
+        'bold',  // 粗体
+        'fontSize',  // 字号
+        'fontName',  // 字体
+        'italic',  // 斜体
+        'underline',  // 下划线
+        'strikeThrough',  // 删除线
+        'foreColor',  // 文字颜色
+        'justify',  // 对齐方式
+        'emoticon',  // 表情
+        'image',  // 插入图片
+        'undo',  // 撤销
+    ];
+    editor.create()
+</script>
+</html>

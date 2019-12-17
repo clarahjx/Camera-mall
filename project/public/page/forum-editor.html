@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发表新帖</title>
+    <link rel="stylesheet" href="../css/forum/header.css">
+    <link rel="stylesheet" href="../css/forum/forum-editor.css">
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/forum/footer.css">
+</head>
+<body>
+<header>
+    <a href="javascript:" id="logo">logo</a>
+    <ul id="nav-bar">
+        <li><a href="./forum-index.html">首页</a></li>
+        <li><a href="./forum-partition.html">Sony</a></li>
+        <li><a href="./forum-partition.html">佳能</a></li>
+        <li><a href="./forum-partition.html">尼康</a></li>
+        <li><a href="./forum-partition.html">资源共享</a></li>
+        <li><a href="./forum-lightPhoto.html">轻摄影</a></li>
+        <li><a href="javascript:">商城</a></li>
+    </ul>
+    <div id="search">
+        <div id="search-lf"></div>
+        <div id="search-body">
+            <label>
+                <input type="text" placeholder="请输入搜索内容">
+            </label>
+        </div>
+        <div id="search-rg">
+            <a href="javascript:"><i class="fa fa-search" id="search-icon" ></i></a>
+        </div>
+    </div>
+</header>
+<!--页面内容-->
+<div id="forum_editor_body">
+    <div id="editor_header">
+    <h4>发表帖子</h4>
+    </div>
+    <div id="editor_headline">
+        <select name="partition" id="editor_partition">
+            <option value="Sony专区">Sony专区</option>
+            <option value="佳能专区">佳能专区</option>
+            <option value="尼康专区">尼康专区</option>
+            <option value="轻摄影">轻摄影</option>
+            <option value="名摄堂">名摄堂</option>
+        </select>
+        <span> 标题：</span>
+        <input type="text" >
+    </div>
+    <div id="editor">
+        <div id="div1" class="toolbar">
+
+        </div>
+        <div id="div2"  class="editorBox text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+            <p>请输入内容</p>
+        </div>
+    </div>
+    <div id="editor_fct">
+        <p id="editor_box">
+            <span id="prompt" style="font-size: 13px ;padding-left: 10px"></span>
+            <a href="javascript:">自动保存</a>
+            <a href="javascript:">保存数据</a>
+            <a href="javascript:">恢复数据</a>
+            <a href="javascript:">清除内容</a>
+            <span style="color: #ed1c24; float: right;font-size: 13px">请记得随时保存你的草稿！</span>
+        </p>
+    </div>
+    <div id="send">
+        <a href="javascript:" style="background-color: #ed1c24;color: white">发表帖子</a>
+        <a href="javascript:" style="background-color: #53efdc;color: #333333">保存草稿</a>
+    </div>
+</div>
+
+<footer>
+    <div id="footer_info">
+       <p>
+           <a href="javascript:">小黑屋</a>
+           <span>|</span>
+           <a href="javascript:">用户协议</a>
+           <span>|</span>
+           <a href="javascript:">隐私政策</a>
+           <span>|</span>
+           <a href="javascript:">社区总规则</a>
+           <span>|</span>
+       </p>
+        <p id="company">&copy;国信安W207部1小组</p>
+    </div>
+</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="../util/wangEditor-3.1.1/release/wangEditor.js"></script>
+<script type="text/javascript">
+    let E = window.wangEditor;
+    let editor = new E('#div1','#div2');
+    editor.customConfig.menus = [
+        'head',  // 标题
+        'bold',  // 粗体
+        'fontSize',  // 字号
+        'fontName',  // 字体
+        'italic',  // 斜体
+        'underline',  // 下划线
+        'strikeThrough',  // 删除线
+        'foreColor',  // 文字颜色
+        'justify',  // 对齐方式
+        'emoticon',  // 表情
+        'image',  // 插入图片
+        'undo',  // 撤销
+    ];
+    editor.create()
+</script>
