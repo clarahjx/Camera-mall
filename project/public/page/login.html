@@ -6,133 +6,40 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        /*body{*/
-        /*background: url(../imgs/05.jpg) no-repeat fixed;*/
-        /*background-size: 100% 100%;*/
-        /*}*/
-        a{
-            text-decoration: none;
-        }
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/less/variables.less">
 
-        .box{
-            border: 1px solid red;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 500px;
-            height: 300px;
-        }
-        .login{
-            width: 300px;
-            margin: auto;
-        }
-        .login_title{
-            height: 18px;
-            line-height: 18px;
-            font-size: 22px;
-            color: #3c3c3c;
-            margin-top: 20px;
-            padding-bottom: 18px;
-            font-weight: 700;
-        }
-        .user{
-            width: 240px;
-            font-size: 14px;
-            line-height: 18px;
-            height: 18px;
-            padding: 11px 8px 11px 0;
-            border: 1px solid #ddd;
-            margin:10px 0;
-        }
 
-        .pass{
-            width: 240px;
-            font-size: 14px;
-            line-height: 18px;
-            height: 18px;
-            padding: 11px 8px 11px 0;
-            border: 1px solid #ddd;
-            margin: 10px 0;
-        }
-        .submit{
-            width: 300px;
-            height: 42px;
-            line-height: 42px;
-            border: 0;
-            display: inline-block;
-            overflow: hidden;
-            vertical-align: middle;
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-            background: #f40;
-            border-radius: 3px;
-            cursor: pointer;
-            zoom: 1;
-        }
-        .submit:hover{
-            background-color: #f52b00;
-        }
-        .other_login{
-            margin: auto;
-            width: 300px;
-        }
-        .other_login a{
-            display: inline-block;
-            margin-right: 20px;
-            color: #6c6c6c;
-        }
-        .other_login a:hover{
-            color: #f52b00;
-        }
-    </style>
 </head>
 <body>
 <div class="box">
     <div class="login">
         <form action="/login">
             <div class="login_title">密码登录</div>
-            <span>用户:</span> <input type="text" name="user" placeholder="邮箱/手机号" class="user" maxlength="30"> <br>
-            <span>密码:</span> <input type="password" name="pass" class="pass" maxlength="40">
+            <span>用户:</span> <input type="text" name="user" placeholder="邮箱/手机号" id="user" maxlength="20"> <br>
+            <span>密码:</span> <input type="password" name="pass" id="pass" maxlength="16">
             <button class="submit">登录</button>
         </form>
     </div>
     <div class="other_login">
         <a href="javascript:;">手机号快捷登录</a>
     </div>
-
-
-    <button class="btn">注册</button>
-
+    <div class="login_link">
+        <a href="javascript:;" class="forget_psd">忘记密码</a>
+        <a href="javascript:;">免费注册</a>
+    </div>
 </div>
 </body>
 <script>
-    var oBtn=document.getElementsByClassName('btn');
-    oBtn.onclick=function () {
-        ajax({
-            url:'/login',
-            data:{
-                user:oT1.value,
-                pass:oT2.value
-            },
-            success:function (res) {
-                var json=JSON.parse(res);
-                console.log(json);
-                if (!json.error){
-                    sessionStorage.setItem('token',json.token);
-                    location.herf='index.html'
-                }
-            }
-        })
-    };
+    var oUser=document.getElementById('user');
+//input框聚焦失焦事件
+    oUser.addEventListener('focus',function () {
+         oUser.removeAttribute('placeholder')
+    },false);
+    oUser.addEventListener('blur',function () {
+        oUser.setAttribute('placeholder','邮箱/手机号')
+    },false)
+
 </script>
 </html>

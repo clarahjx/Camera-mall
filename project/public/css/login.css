@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*body{*/
+/*background: url(../imgs/05.jpg) no-repeat fixed;*/
+/*background-size: 100% 100%;*/
+/*}*/
+a{
+    text-decoration: none;
+}
+
+.box{
+    border: 1px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+}
+.login{
+    width: 300px;
+    margin: auto;
+}
+.login_title{
+    height: 18px;
+    line-height: 18px;
+    font-size: 22px;
+    color: #3c3c3c;
+    margin-top: 40px;
+    padding-bottom: 18px;
+    font-weight: 700;
+}
+#user{
+    width: 240px;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    padding: 11px 8px 11px 0;
+    border: 1px solid #ddd;
+    margin:10px 0;
+}
+
+#pass{
+    width: 240px;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    padding: 11px 8px 11px 0;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+.submit{
+    width: 300px;
+    height: 42px;
+    line-height: 42px;
+    border: 0;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #f40;
+    border-radius: 3px;
+    cursor: pointer;
+    zoom: 1;
+    margin-top: 20px;
+}
+.submit:hover{
+    background-color: #f52b00;
+}
+.other_login{
+    margin: auto;
+    width: 300px;
+}
+.other_login a{
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.other_login a:hover{
+    color: #f52b00;
+}
+.login_link{
+    margin: auto;
+    width: 300px;
+    text-align: right;
+}
+.login_link a{
+    display: inline-block;
+    color: #6c6c6c;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.login_link a:hover{
+    color: #f52b00;
+}
+.forget_psd{
+    margin-right: 26px;
+}

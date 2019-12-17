@@ -5,9 +5,76 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>regiester</title>
+    <link rel="stylesheet" href="../css/regiester.css">
+    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/less/variables.less">
 </head>
 <body>
+<div class="container">
+    <div class="register-box">
+        <div class="title-box">
+            <span>用户注册</span>
+        </div>
+        <form action="#" method="post">
+            <div class="username-box">
+                <span class="require">*</span>
+                <label for="username">用户名</label>
+                <div class="username-input">
+                    <input type="text" id="username" name="username" placeholder="请输入用户名 长度:6-12个字符" />
+                </div>
+            </div>
 
+            <div class="userPassword-box">
+                <span class="require">*</span>
+                <label for="userPassword">密码</label>
+                <div class="userPassword-input">
+                    <input type="password" id="userPassword" name="userPassword" placeholder="请输入密码 长度:6-12个字符" />
+                </div>
+            </div>
+
+            <div class="userRePassword-box">
+                <span class="require">*</span>
+                <label for="userRePassword">确认密码</label>
+                <div class="userRePassword-input">
+                    <input type="password" id="userRePassword" name="userRePassword" placeholder="请重复输入密码" />
+                </div>
+            </div>
+
+            <div class="userPhone-box">
+                <span class="require">*</span>
+                <label for="userPhone">手机号码</label>
+                <div class="userPhone-input">
+                    <input type="text" id="userPhone" name="userPhone" placeholder="请输入您的手机号码，11位有效数字" />
+                </div>
+            </div>
+
+            <div class="userEmail-box">
+                <span class="require">*</span>
+                <label for="userEmail">电子邮箱</label>
+                <div class="userEmail-input">
+                    <input type="text" id="userEmail" name="userEmail" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+                </div>
+            </div>
+
+            <div class="userGender-box">
+                <span class="require">*</span>
+                <label for="userGender">性别</label>
+                <div class="userGender-input">
+                    <input type="radio" id="userGender_01" name="userGender" value="0" checked="checked" />男   
+                    <input type="radio" id="userGender_02" name="userGender" value="1" />女
+                </div>
+            </div>
+
+            <div class="submit-box">
+                <input id = "submit-button" type="submit" value="注册">
+            </div>
+
+            <div class="goLogin-box">
+                <a href="javascript:;">已有账号？去登录</a>
+            </div>
+        </form>
+    </div>
+</div>
 </body>
 </html>
