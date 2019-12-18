@@ -75,6 +75,10 @@
             display: flex;
             margin: 60px 30px 0 30px;
         }
+        .nr_number img{
+            width: 20px;
+            height: 20px;
+        }
         .min,.plus{
             display: inline-block;
             width: 40px;
@@ -117,11 +121,10 @@
     <div class="total">您的购物袋总额为￥5,657.00。</div>
     <div class="con">
         <div class="dp_name">
-            <input type="checkbox">
-            辜子懿的店铺
+            <input id="allChoose" type="checkbox">全选</input>
         </div>
         <div class="list">
-            <input type="checkbox">
+            <input type="checkbox" name="input">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -132,9 +135,9 @@
                 </div>
 
                 <div class="nr_number">
-                    <span class="min">-</span>
+                    <span class="min"><img src="../image/jian.png" alt=""></span>
                     <span class="number">1</span>
-                    <span class="plus">+</span>
+                    <span class="plus"><img src="../image/jia.png" alt=""></span>
                 </div>
                 <div class="nr_right">
                     <p class="price">￥ 137.50</p>
@@ -143,7 +146,7 @@
             </div>
         </div>
         <div class="list">
-            <input type="checkbox">
+            <input type="checkbox" name="input">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -154,9 +157,9 @@
                 </div>
 
                 <div class="nr_number">
-                    <span class="min">-</span>
+                    <span class="min"><img src="../image/jian.png" alt=""></span>
                     <span class="number">1</span>
-                    <span class="plus">+</span>
+                    <span class="plus"><img src="../image/jia.png" alt=""></span>
                 </div>
                 <div class="nr_right">
                     <p class="price">￥ 137.50</p>
@@ -165,7 +168,7 @@
             </div>
         </div>
         <div class="list">
-            <input type="checkbox">
+            <input type="checkbox" name="input">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -176,9 +179,9 @@
                 </div>
 
                 <div class="nr_number">
-                    <span class="min">-</span>
+                    <span class="min"><img src="../image/jian.png" alt=""></span>
                     <span class="number">1</span>
-                    <span class="plus">+</span>
+                    <span class="plus"><img src="../image/jia.png" alt=""></span>
                 </div>
                 <div class="nr_right">
                     <p class="price">￥ 137.50</p>
@@ -187,9 +190,26 @@
             </div>
         </div>
     </div>
+    <div class="footer">
+
+    </div>
 </div>
 </body>
+<script src="../util/jquery.min.js"></script>
 <script>
-
+    var oAllChoose=document.getElementById('allChoose');
+    var oInput=document.getElementsByTagName('input');
+//点击全选再点击全不选
+    oAllChoose.onclick=function () {
+        for (var i=0;i<oInput.length;i++){
+            if (oInput[i].type=='checkbox'){
+                if (oAllChoose.checked==true){
+                    oInput[i].checked=true;
+                }else{
+                    oInput[i].checked=false;
+                }
+            }
+        }
+    }
 </script>
 </html>
