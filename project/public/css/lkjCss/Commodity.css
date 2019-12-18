@@ -42,11 +42,11 @@ body {
 }
 .product-multiview li {
   text-align: center;
-  width: 25%;
+  width: 20%;
   float: left;
 }
 .product-multiview li img {
-  padding: 10px;
+  padding: 5px;
   width: 60px;
   height: 60px;
   border: 1px solid #dfdfdf;
@@ -55,6 +55,7 @@ body {
 .product-multiview li img:hover {
   background: white;
   cursor: pointer;
+  border: 1px solid #0071E3;
 }
 .product-information {
   padding-top: 18%;
@@ -73,8 +74,9 @@ body {
 .product-package {
   float: left;
   margin: 10px 20px 10px 0;
-  width: 46%;
-  height: 60px;
+  width: calc(46% - 4px);
+  height: 56px;
+  border: 2px solid #fff;
   line-height: 60px;
   background: #fff;
   font-size: 14px;
@@ -83,6 +85,9 @@ body {
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   text-align: center;
+}
+.product-package:hover {
+  border: 2px solid #0071E3;
 }
 .product-nums input {
   outline-style: none;
@@ -96,8 +101,9 @@ body {
   caret-color: transparent;
 }
 .product-stock {
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 12px;
+  font-weight: bold;
 }
 .product-buy {
   padding: 10% 0;
@@ -127,7 +133,6 @@ body {
   display: inline-block;
   height: 60px;
   background: white;
-  border-bottom: 1px solid #dfdfdf;
   text-align: center;
   position: absolute;
   top: 0;
