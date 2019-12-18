@@ -5,7 +5,7 @@ a{
 body,input{
     margin: 0;
     padding: 0;
-    background: pink;
+    background: white;
 }
 input{
     display: inline-block;
@@ -16,32 +16,45 @@ input{
 }
 .register-box{
     position: relative;
-    height: 800px;
-    width: 800px;
-    top: 50px;
+    height: 500px;
+    width: 700px;
+    top: 20px;
     margin: 0 auto;
     z-index: 99999;
     background:#ffffff;
-    border: 7px solid #ccc;
+    /*border: 7px solid #ccc;*/
 }
 .title-box{
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    margin-left: 250px;
-    margin-top: 5px;
-    text-align: center;
-    font-size: 28px;
+    /*position: absolute;*/
+    /*width: 200px;*/
+    /*height: 50px;*/
+    /*margin-left: 250px;*/
+    /*margin-top: 20px;*/
+    /*text-align: center;*/
+    /*font-size: 36px;*/
+    /*!*background: red;*!*/
+    /*font-weight: 800;*/
+    /*color: #c2e7ff;*/
+    /*line-height: 50px;*/
+    width: 100%;
+    height: 170px;
+    background: url("../image/background.jpg");
+}
+.title-box span{
+    color: white;
     font-weight: 800;
-    color: #ff5000;
-    line-height: 50px;
+    font-size: 38px;
+    display: block;
+    height: 170px;
+    line-height: 170px;
+    text-align: center;
 }
 .username-box{
     position: absolute;
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:100px;
+    margin-top:20px;
     margin-left:80px;
     font-weight: 700;
 }
@@ -61,7 +74,7 @@ input{
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:180px;
+    margin-top:80px;
     margin-left:80px;
     font-weight: 700;
 }
@@ -80,7 +93,7 @@ input{
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:260px;
+    margin-top:140px;
     margin-left:80px;
     font-weight: 700;
 }
@@ -99,7 +112,7 @@ input{
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:340px;
+    margin-top:200px;
     margin-left:80px;
     font-weight: 700;
 }
@@ -118,7 +131,7 @@ input{
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:420px;
+    margin-top:260px;
     margin-left:80px;
     font-weight: 700;
 }
@@ -138,7 +151,7 @@ input{
     width: 420px;
     height: 40px;
     line-height: 40px;
-    margin-top:500px;
+    margin-top:320px;
     margin-left:82px;
     font-weight: 700;
 }
@@ -154,23 +167,25 @@ input{
     width: 80px;
     height: 40px;
     line-height: 40px;
-    margin-top: 580px;
+    margin-top: 380px;
     margin-left:200px;
-    border-radius: 5px;
-    background: grey;
+    /*border-radius: 5px;*/
+    /*background: grey;*/
 }
 #submit-button{
     display: inline-block;
     width: 80px;
     height: 40px;
     border-radius: 5px;
-    background: red;
+    background: rgb(56,154,231);
+    vertical-align: inherit;
+    color: white;
+    font-size: 18px;
 }
 .goLogin-box{
     position:absolute;
     width: 150px;
     height: 20px;
-    margin-top: 600px;
+    margin-top: 440px;
     margin-left:320px;
-
 }
