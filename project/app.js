@@ -9,11 +9,14 @@ var bodyParser = require('body-parser');
 //引入ejs
 var ejs=require('ejs');
 //引用路由
+// <<<<<<< HEAD
 // var loginRouter=require('./router/loginRouter');
 
+// =======
+var indexRouter=require('./router/indexRouter');
+// >>>>>>> 61edd4b01d325f7c0752e9453d8ecaf35553947c
 //创建服务
 var server=express();
-
 
 //配置浏览器访问的静态文件目录
 //console.log(__dirname);//当前目录的绝对路径
@@ -34,4 +37,4 @@ server.engine('html',ejs.__express);//声明html引擎
 server.set('view engine','html'); //配置模板引擎 模板类型
 
 //给服务配置端口号
-server.listen(8888);
+server.listen(8080);

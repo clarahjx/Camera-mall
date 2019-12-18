@@ -1,0 +1,163 @@
+#content_body {
+  margin: 0 auto;
+  width: 900px;
+  margin-top: 70px;
+}
+#content_body #content {
+  width: 870px;
+  padding: 15px;
+  background-color: white;
+}
+#content_body #content #content_head {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+}
+#content_body #content img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+#content_body #content .userInfo {
+  width: 870px;
+}
+#content_body #content h4 {
+  margin: 0;
+  padding-left: 60px;
+  font-size: 20px;
+}
+#content_body #content #review {
+  float: right;
+  width: 100px;
+}
+#content_body #review span {
+  font-size: 12px;
+  color: #999999;
+}
+#content_body #content:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+.user {
+  margin-top: 10px;
+  padding-left: 70px;
+}
+.user span {
+  color: #444444;
+  font-size: 12px;
+}
+#content_text {
+  width: 870px;
+  height: 600px;
+}
+#review_body {
+  width: 900px;
+  margin-top: 10px;
+}
+#review_body #review_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#review_body #review_list li {
+  width: 870px;
+  padding: 1px 15px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+#review_body #review_list li .list_head {
+  padding-bottom: 20px;
+  border-bottom: 3px solid #eaeaea;
+}
+#review_body #review_list li .list_head img {
+  float: left;
+  width: 60px;
+  height: 60px;
+}
+#review_body #review_list li .list_head h4 {
+  margin-bottom: 10px;
+}
+#review_body #review_list li .list_head span {
+  margin-left: 10px;
+}
+#review_body #review_list li .list_head .user {
+  padding-left: 60px;
+}
+#review_body #review_list li .replyBox {
+  min-height: 80px;
+  background-color: white;
+}
+#review_body #review_list .list_head:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+#nextPage {
+  display: block;
+  width: 900px;
+  height: 30px;
+  text-align: center;
+  background-color: white;
+  line-height: 30px;
+}
+#nextPage:hover {
+  background-color: #ed1c24;
+}
+#public_page {
+  width: 900px;
+  height: 40px;
+  margin-top: 10px;
+}
+#public_page #public {
+  display: block;
+  float: left;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #ed1c24;
+  text-decoration: none;
+  line-height: 40px;
+}
+#public_page #public i {
+  font-size: 20px;
+}
+#public_page #public span {
+  font-size: 20px;
+}
+#public_page #page {
+  margin-top: 10px;
+  height: 30px;
+  text-align: right;
+  text-decoration: none;
+}
+#public_page #page a {
+  padding: 0 10px 10px 10px;
+  height: 25px;
+  background-color: #dddddd;
+  text-decoration: none;
+  line-height: 25px;
+  color: #444444;
+}
+#replyBox {
+  width: 870px;
+  margin-top: 10px;
+  background-color: white;
+  padding: 15px;
+}
+#replyBox #editor {
+  width: 870px;
+}
+#replyBox #editor .editorBox {
+  width: 870;
+  min-height: 250px;
+}
+#editor_fct {
+  background-color: white;
+}
+#editor_fct p {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=forum-content.css.map */

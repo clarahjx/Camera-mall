@@ -1,0 +1,80 @@
+@colors1:#333333;
+@colors2:#444444;
+@colors3:#bdbdbd;
+@colors4:#999999;
+@padding_min:10px;
+@margin_min:10px;
+@border:#eaeaea;
+
+#forum_editor_body{
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 70px;
+  #editor_header {
+    width: 870px;
+    padding: 15px;
+    background-color: white;
+    h4 {
+      color: #ed1c24;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid @border;
+
+    }
+  }
+  #editor_headline{
+    width: 880px;
+    padding:@padding_min;
+    background-color: white;
+    #editor_partition{
+      height: 30px;
+    }
+    span{
+      padding-left: 20px;
+      color: @colors2
+    }
+    input{
+      width: 200px;
+      height: 20px;
+    }
+  }
+  #editor{
+    width: 880px;
+    padding:@padding_min;
+    background-color: white;
+    #div2{
+      width: 870px;
+      min-height: 300px;
+    }
+  }
+  #editor_box{
+    height: 30px;
+    background-color: #0ef2b0;
+    margin: 0;
+    line-height: 30px;
+    a{
+      font-size: 13px;
+      text-decoration: none;
+      color: @colors2;
+      float: right;
+      padding-right: 10px;
+    }
+  }
+
+  #send{
+    margin-top: @margin_min;
+    a{
+      display: block;
+      float: left;
+      width: 120px;
+      height: 30px;
+      text-decoration: none;
+      line-height: 30px;
+      text-align: center;
+      margin-right: @margin_min;
+    }
+  }
+
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轻摄影</title>
+    <link rel="stylesheet" href="../css/forum/header.css">
+    <link rel="stylesheet" href="../css/forum/footer.css">
+    <link rel="stylesheet" href="../css/forum/forum-lightPhoto.css">
+    <link rel="stylesheet" href="../util/swiper-5.2.0/package/css/swiper.min.css">
+    <link rel="stylesheet" href="../font/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <a href="javascript:" id="logo">logo</a>
+    <ul id="nav-bar">
+        <li><a href="./forum-index.html">首页</a></li>
+        <li><a href="./forum-partition.html">Sony</a></li>
+        <li><a href="./forum-partition.html">佳能</a></li>
+        <li><a href="./forum-partition.html">尼康</a></li>
+        <li><a href="./forum-partition.html">资源共享</a></li>
+        <li><a href="./forum-lightPhoto.html">轻摄影</a></li>
+        <li><a href="javascript:">商城</a></li>
+    </ul>
+    <div id="search">
+        <div id="search-lf"></div>
+        <div id="search-body">
+            <label>
+                <input type="text" placeholder="请输入搜索内容">
+            </label>
+        </div>
+        <div id="search-rg">
+            <a href="javascript:"><i class="fa fa-search" id="search-icon" ></i></a>
+        </div>
+    </div>
+</header>
+<div id="lightPhoto_body">
+<!--     导航条-->
+    <div id="forum-banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../image/forum/lightPhoto-banner1.jpg" class="banner" alt=""></div>
+                <div class="swiper-slide"><img src="../image/forum/lightPhoto-banner2.jpg" class="banner" alt=""></div>
+                <div class="swiper-slide"><img src="../image/forum/lightPhoto-banner3.jpg" class="banner" alt=""></div>
+                <div class="swiper-slide"><img src="../image/forum/lightPhoto-banner4.jpg" class="banner" alt=""></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div id="banner_detail">
+            <p id="banner_detail_headline">【行摄西藏】之高原梯田</p>
+            <p id="banner_detail_other">带你领略高原梯田之美</p>
+        </div>
+    </div>
+<!--    摄影分区-->
+    <div id="lightPhoto_type">
+         <a href="javascript:" id="type_famous">
+             <img src="../image/forum/camera.jpg" alt="">
+             <div>
+                 <p>名摄堂</p>
+                 <p style="font-size: 14px;color:#ffffff"> 摄影达人聚集地</p>
+             </div>
+
+         </a>
+         <a href="javascript:" id="type_simple">
+             <div id="simple_icon">
+                 <i class="fa fa-heart-o" style="color: #ffffff;"></i>
+             </div>
+             <div id="simple_headline">
+                 <p>名摄堂</p>
+                 <p style="font-size: 14px;color:#ffffff"> 摄影达人聚集地</p>
+             </div>
+         </a>
+         <a href="./forum-editor.html" id="type_publish">
+             <div id="publish_icon">
+                 <i class="fa fa-pencil-square-o" style="color: #ffffff;"></i>
+           </div>
+             <div id="publish_headline">
+                 <p>发表主题</p>
+                 <p style="font-size: 14px;color:#ffffff"> 分享你所喜爱的</p>
+             </div></a>
+     </div>
+<!--    最新or最热-->
+    <div id="choose">
+        <div>
+        <a  class="active chooseBtn" href="javascript:">最新</a>
+        <a  class="chooseBtn" href="javascript:">最热</a>
+        </div>
+    </div>
+<!--     瀑布流图片  -->
+    <div id="imageWaterfall">
+       <ul id="image_list1">
+           <li>
+               <img class="imgList" src="../image/forum/imageList1.jpg" alt="">
+               <div class="userInfo">
+                   <img  class="userImg" src="../image/forum/userimage6.jpg" alt="">
+                   <div class="userBox">
+                       <h5>玻璃桥</h5>
+                       <span>作者:</span>
+                       <span class="username">username</span>
+                   </div>
+
+               </div>
+               <hr>
+               <div class="imgBottom">
+                   <div class="imgBottomDiv1">
+                   <a href="javascript:" class="imgChoose">
+                       <i class="fa fa-thumbs-up"></i>
+                       <span>加油：0</span>
+                   </a>
+                   <span>|</span>
+                   <a href="javascript:" class="imgChoose">
+                       <span>评论：0</span>
+                   </a>
+                   </div>
+                   <div class="imgBottomDiv2">
+                   <a href="javascript:" class="imgChoose2">
+                       <i class="fa fa-star" ></i>
+                       <span>收藏</span>
+                   </a>
+                   <a href="javascript:" class="imgChoose2">
+                       <i class="fa fa-share-square-o" ></i>
+                       <span>分享</span>
+                   </a>
+
+                   </div>
+
+               </div>
+           </li>
+           <li>
+               <img class="imgList" src="../image/forum/imageList4.jpg" alt="">
+               <div class="userInfo">
+                   <img  class="userImg" src="../image/forum/userimage3.jpg" alt="">
+                   <div class="userBox">
+                       <h5>乌云下的月亮</h5>
+                       <span>作者:</span>
+                       <span class="username">username</span>
+                   </div>
+
+               </div>
+               <hr>
+               <div class="imgBottom">
+                   <div class="imgBottomDiv1">
+                       <a href="javascript:" class="imgChoose">
+                           <i class="fa fa-thumbs-up"></i>
+                           <span>加油：0</span>
+                       </a>
+                       <span>|</span>
+                       <a href="javascript:" class="imgChoose">
+                           <span>评论：0</span>
+                       </a>
+                   </div>
+                   <div class="imgBottomDiv2">
+                       <a href="javascript:" class="imgChoose2">
+                           <i class="fa fa-star" ></i>
+                           <span>收藏</span>
+                       </a>
+                       <a href="javascript:" class="imgChoose2">
+                           <i class="fa fa-share-square-o" ></i>
+                           <span>分享</span>
+                       </a>
+
+                   </div>
+
+               </div>
+           </li>
+           <li>
+               <img class="imgList" src="../image/forum/imageList8.jpg" alt="">
+               <div class="userInfo">
+                   <img  class="userImg" src="../image/forum/userimage7.jpg" alt="">
+                   <div class="userBox">
+                       <h5>相机里的张掖湿地芦苇</h5>
+                       <span>作者:</span>
+                       <span class="username">username</span>
+                   </div>
+
+               </div>
+               <hr>
+               <div class="imgBottom">
+                   <div class="imgBottomDiv1">
+                       <a href="javascript:" class="imgChoose">
+                           <i class="fa fa-thumbs-up"></i>
+                           <span>加油：0</span>
+                       </a>
+                       <span>|</span>
+                       <a href="javascript:" class="imgChoose">
+                           <span>评论：0</span>
+                       </a>
+                   </div>
+                   <div class="imgBottomDiv2">
+                       <a href="javascript:" class="imgChoose2">
+                           <i class="fa fa-star" ></i>
+                           <span>收藏</span>
+                       </a>
+                       <a href="javascript:" class="imgChoose2">
+                           <i class="fa fa-share-square-o" ></i>
+                           <span>分享</span>
+                       </a>
+
+                   </div>
+
+               </div>
+           </li>
+       </ul>
+        <ul id="image_list2">
+            <li>
+                <img class="imgList" src="../image/forum/imageList2.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage1.jpg" alt="">
+                    <div class="userBox">
+                        <h5>圣诞红，圣诞绿，周末愉快。</h5>
+                        <span>作者:</span>
+                        <span class="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img class="imgList" src="../image/forum/imageList5.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage4.jpg" alt="">
+                    <div class="userBox">
+                        <h5>随手拍</h5>
+                        <span>作者:</span>
+                        <span class="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img class="imgList" src="../image/forum/imageList10.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage9.jpg" alt="">
+                    <div class="userBox">
+                        <h5>一路走走停停，只为虚度光阴</h5>
+                        <span>作者:</span>
+                        <span class="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+        <ul id="image_list3">
+            <li>
+                <img class="imgList" src="../image/forum/imageList3.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage2.jpg" alt="">
+                    <div class="userBox">
+                        <h5>随手一拍</h5>
+                        <span>作者:</span>
+                        <span class="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img class="imgList" src="../image/forum/imageList7.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage5.jpg" alt="">
+                    <div class="userBox">
+                        <h5>徒步华尖山，远眺贡嘎</h5>
+                        <span>作者:</span>
+                        <span class="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <img class="imgList" src="../image/forum/imageList9.jpg" alt="">
+                <div class="userInfo">
+                    <img  class="userImg" src="../image/forum/userimage8.jpg" alt="">
+                    <div class="userBox">
+                        <h5>随手拍</h5>
+                        <span>作者:</span>
+                        <span id="username">username</span>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="imgBottom">
+                    <div class="imgBottomDiv1">
+                        <a href="javascript:" class="imgChoose">
+                            <i class="fa fa-thumbs-up"></i>
+                            <span>加油：0</span>
+                        </a>
+                        <span>|</span>
+                        <a href="javascript:" class="imgChoose">
+                            <span>评论：0</span>
+                        </a>
+                    </div>
+                    <div class="imgBottomDiv2">
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-star" ></i>
+                            <span>收藏</span>
+                        </a>
+                        <a href="javascript:" class="imgChoose2">
+                            <i class="fa fa-share-square-o" ></i>
+                            <span>分享</span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<footer>
+    <div id="footer_info">
+        <p>
+            <a href="javascript:">小黑屋</a>
+            <span>|</span>
+            <a href="javascript:">用户协议</a>
+            <span>|</span>
+            <a href="javascript:">隐私政策</a>
+            <span>|</span>
+            <a href="javascript:">社区总规则</a>
+            <span>|</span>
+        </p>
+        <p id="company">&copy;国信安W207部1小组</p>
+    </div>
+</footer>
+</body>
+<script src="../util/swiper-5.2.0/package/js/swiper.min.js"></script>
+<script>
+    window.onload=function () {
+        let mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay:true,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    }
+
+</script>
+</html>
