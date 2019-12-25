@@ -114,6 +114,9 @@
             margin-top: 16px;
             cursor: pointer;
         }
+        .footer{
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -123,8 +126,8 @@
         <div class="dp_name">
             <input id="allChoose" type="checkbox">全选</input>
         </div>
-        <div class="list">
-            <input type="checkbox" name="input">
+        <div class="list" id="product1">
+            <input type="checkbox" name="input" value="product1">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -145,8 +148,8 @@
                 </div>
             </div>
         </div>
-        <div class="list">
-            <input type="checkbox" name="input">
+        <div class="list" id="product2">
+            <input type="checkbox" name="input" value="product2">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -167,8 +170,8 @@
                 </div>
             </div>
         </div>
-        <div class="list">
-            <input type="checkbox" name="input">
+        <div class="list" id="product3">
+            <input type="checkbox" name="input" value="product3">
             <img class="img" src="../image/01.jpg" alt="">
             <div class="list_nr">
                 <div class="nr_l">
@@ -191,7 +194,9 @@
         </div>
     </div>
     <div class="footer">
-
+       <div>商品总价:<span id="total">1000</span></div>
+        <br>
+        <span>立即购买</span>
     </div>
 </div>
 </body>
@@ -210,6 +215,27 @@
                 }
             }
         }
+    };
+
+    // $.ajax({
+    //     url:'/shop-car',
+    //     headers:{
+    //         "authorization":'Bearer  '+sessionStorage.getItem('token')
+    //     },
+    //     success:function (res) {
+    //         console.log(res)
+    //     }
+    // })
+//计算总价
+    function prodC() {
+        var $div=$('.con').find('div[id]');
+        $div.each(function (i,dom) {
+            var num=$(dom).children('.nr_number').find('.number').text();//商品数量
+            var price=num * $(dom).children('nr_right').find('p.price').text();//商品单价
+            console.log(num);
+        });
+       //var total=$(dom).children().find()
     }
+    prodC();
 </script>
 </html>

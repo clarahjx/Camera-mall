@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <title>shop-car2</title>
     <link rel="stylesheet" href="../css/shop-car.css">
-
-    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../font/font-awesome-4.7.0/less/variables.less">
 </head>
 <body>
 <!--<div id="header">-->
@@ -232,6 +229,7 @@
             var integral = 0;
             $tr.each(function(i, dom) {
                 var num = $(dom).children(".td_6").find("input").val(); //商品数量
+                console.log(num);
                 var price = num * $(dom).children(".td_5").text(); //商品小计
                 $(dom).children(".td_7").html(price); //显示商品小计
                 summer += price; //总价

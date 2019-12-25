@@ -7,7 +7,7 @@ var db=mysql.createConnection({
     host:'localhost',
     user:'root',
     password:'root',
-    database:'workday'
+    database:'web207'
 });
 
 module.exports=db;

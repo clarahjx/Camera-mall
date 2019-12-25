@@ -4,6 +4,9 @@ var myRouter=express.Router();
 //引入控制层
 var loginController=require('../controller/loginController');
 
-myRouter.route('/login').get(loginController.login);
+myRouter.route('/login').post(loginController.login);
+
+myRouter.route('/register').post(loginController.register);
+;
 
 module.exports=myRouter;

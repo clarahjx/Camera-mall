@@ -4,8 +4,7 @@
     list-style: none;
 }
 body{
-background: url(../image/bgk.jpg) no-repeat fixed;
-background-size: 100% 100%;
+
 }
 a{
     text-decoration: none;
@@ -29,9 +28,9 @@ input::-webkit-input-placeholder{
 .box{
     /*border: 1px solid red;*/
     position: fixed;
-    top: 0;
+    top: 15%;
     /*left: 0;*/
-    right: 0;
+    right: 8%;
     bottom: 0;
     margin: auto;
     width: 600px;
@@ -69,7 +68,7 @@ input::-webkit-input-placeholder{
     border: 1px solid #ddd;
     margin: 10px 0;
 }
-.submit{
+#loginBtn{
     width: 300px;
     height: 42px;
     line-height: 42px;
@@ -86,7 +85,7 @@ input::-webkit-input-placeholder{
     zoom: 1;
     margin-top: 20px;
 }
-.submit:hover{
+#submit:hover{
     background-color: #f52b00;
 }
 .other_login{
@@ -115,6 +114,7 @@ input::-webkit-input-placeholder{
 }
 .login_link a:hover{
     color: #f52b00;
+    cursor: pointer;
 }
 .forget_psd{
     margin-right: 26px;

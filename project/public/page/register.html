@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <!--<link rel="stylesheet" href="../../font/font-awesome-4.7.0/css/font-awesome.min.css">-->
+    <!--<link rel="stylesheet" href="../../font/font-awesome-4.7.0/less/variables.less">-->
+</head>
+<body>
+<div class="container">
+    <div class="title-box">
+        <span>用户注册</span>
+    </div>
+    <div class="register-box">
+
+        <!--<form action="/register" method="post">-->
+            <div class="username-box">
+                <span class="require">*</span>
+                <span for="username">用户名</span>
+                <div class="username-input">
+                    <input type="text" id="username" autocomplete="off" name="user" placeholder="请输入用户名 长度:8-16个字符" />
+                    <p id="errUsername"></p>
+                </div>
+
+            </div>
+
+            <div class="userPassword-box">
+                <span class="require">*</span>
+                <label for="userPassword">密码</label>
+                <div class="userPassword-input">
+                    <input type="password" id="userPassword"  name="pass" placeholder="请输入密码 长度:6-16个字符" />
+                    <p id="errPassWord"></p>
+                </div>
+            </div>
+
+            <div class="userRePassword-box">
+                <span class="require">*</span>
+                <label for="userRePassword">确认密码</label>
+                <div class="userRePassword-input">
+                    <input type="password" id="userRePassword" name="userRePassword" placeholder="请重复输入密码" />
+                    <p id="errRePassword"></p>
+                </div>
+            </div>
+
+            <div class="userPhone-box">
+                <span class="require">*</span>
+                <label for="userPhone">手机号码</label>
+                <div class="userPhone-input">
+                    <input type="text" id="userPhone" autocomplete="off" name="phone" placeholder="请输入您的手机号码，11位有效数字" />
+                    <p id="errUserPhone"></p>
+                </div>
+            </div>
+
+            <div class="userEmail-box">
+                <span class="require">*</span>
+                <label for="userEmail">电子邮箱</label>
+                <div class="userEmail-input">
+                    <input type="text" id="userEmail" autocomplete="off" name="email" placeholder="请输入您的邮箱地址，如：123@qq.com" />
+                    <p id="errUserEmail"></p>
+                </div>
+            </div>
+
+            <div class="userGender-box">
+                <span class="require">*</span>
+                <label for="userGender">性别</label>
+                <div class="userGender-input">
+                    <input type="radio" id="userGender_01" name="userGender" value="0" />男   
+                    <input type="radio" id="userGender_02" name="userGender" value="1" />女
+                </div>
+            </div>
+
+            <div class="submit-box">
+                <!--<input id = "submit-button" type="submit" value="注册">-->
+                <button id="submit-button" value="">注册</button>
+            </div>
+
+            <!--<div class="goLogin-box">-->
+                <!--<a href="javascript:;">已有账号？去登录</a>-->
+            <!--</div>-->
+        <!--</form>-->
+    </div>
+</div>
+</body>
+<script src="../util/jquery-3.4.1.js"></script>
+<script>
+
+//判断用户名正则
+    $('#username').focus(function () {
+        $('#errUsername').text('')
+    });
+    $('#username').blur(function() {
+        var reg=/^[a-zA-Z0-9_-]{8,16}$/;//用户名8--16位数
+        let text = $(this).val().trim();
+        if(text==""){
+            $('#errUsername').text('请输入用户名');
+            return
+        }
+        if(!reg.test(text)){
+            $('#errUsername').text('请输入8到16位的用户名')
+        }
+    });
+//判断密码
+    $('#userPassword').focus(function () {
+        $('#errPassWord').text('')
+    });
+    $('#userPassword').blur(function() {
+        //var reg=/^[a-zA-Z]\w{1,5}$/; //用户名位数
+        let reg=/^(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9~!@&%#_]{6,16}$/;
+        let text = $(this).val().trim();
+        if(text==""){
+            $('#errPassWord').text('请输入密码');
+            return
+        }
+        if(!reg.test(text)){
+            $('#errPassWord').text('必须包含一个大写字母,一个小写字母,且长度为6到16位')
+        }
+    });
+//确认密码
+    $('#userRePassword').focus(function () {
+        $('#errRePassWord').text(' ')
+    });
+    $('#userRePassword').blur(function() {
+        var passWord=$('#userPassword').val().trim();
+        let text = $(this).val().trim();
+        $('#errRePassword').text(' ');
+        if(text==""){
+            $('#errRePassword').text('请输入密码');
+            return
+        }
+        $('#errRePassword').text(' ');
+        if(passWord!=text){
+            $('#errRePassword').text('两次输入的密码不一致');
+            return false;
+    }
+    return true;
+});
+//手机号码正则
+    $('#userPhone').focus(function () {
+        $('#errUserPhone').text(' ');
+    });
+    $('#userPhone').blur(function () {
+       let regMobile=/^((13[0-9])|(14[5|7])|(15([0-3]|[5-9]))|(18[0,5-9]))\d{8}$/;
+       let text=$(this).val().trim();
+       if (text==''){
+           $("#errUserPhone").text('请输入手机号码');
+           return
+       }
+       if (!regMobile.test(text)){
+           $("#errUserPhone").text('手机号码不正确,请重新输入');
+           return false;
+       }
+        $("#errUserPhone").text(' ');
+        return true;
+    });
+//email正则
+    $('#userEmail').focus(function () {
+        $('#errUserEmail').text(' ')
+    });
+    $('#userEmail').blur(function () {
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        var email=$(this).val().trim();
+        if (email==''){
+            $('#errUserEmail').text(' 请输入邮箱');
+            return
+        }
+        if (!reg.test(email)){
+            $('#errUserEmail').text('Email格式不正确,列如web@sohu.com');
+            return false
+        }
+        return true
+    });
+
+//点击注册
+$('#submit-button').click(function () {
+    //判断男女
+    var sexNum=$("input[name*='userGender']");
+    var sex='';  //保存用户的选项
+    for (var i=0;i<sexNum.length;i++){
+        if (sexNum[i].checked){
+            sex=sexNum[i].value;
+        }
+    }
+    $.ajax({
+        url:'/register',
+        type:'post',
+        data:{
+            user:$('#username').val(),
+            pass:$('#userPassword').val(),
+            phone:$('#userPhone').val(),
+            email:$('#userEmail').val(),
+            sex:sex
+        },
+        success:function (res) {
+          console.log(res)
+        }
+    });
+});
+</script>
+</html>
